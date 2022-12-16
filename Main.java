@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String [] args){
 
-        System.out.println("Hola Mundo :D");
+        System.out.println("Cambiando");
 
         Scanner in = new Scanner(System.in);
 
