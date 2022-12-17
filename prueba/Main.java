@@ -2,7 +2,7 @@ package prueba;
 
 public class Main {
 
-    public static void main (String args[]){
+    public static void main (String[] args){
 
         Empleados empleado1 = new Empleados("Brodely");
 
@@ -17,6 +17,8 @@ public class Main {
         System.out.println(empleado2.getInformacionEmpleado());
 
         System.out.println(empleado3.getInformacionEmpleado());
+
+        System.out.println(Empleados.getStaticIDSiguiente());
     }
 }
 
@@ -43,6 +45,14 @@ class Empleados{
     //Setter
     public void setCambiarSeccion(String seccion){
         this.seccion = seccion;
+    }
+
+
+    //STATIC : NO ACTUAN SOBRE OBJETOS DECLARADOS
+    //METODO STATIC (El Objeto Math todos sus metodos son estaticos es por ello que no debe crearse el objeto :0)
+    //No puede acceder a variables que no sean static
+    public static String getStaticIDSiguiente(){
+        return "El ID siguiente es: "+ idSiguiente;
     }
 
 
